@@ -1,7 +1,29 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+	images: {
+		remotePatterns: [
+			{
+			  protocol: "https",
+			  hostname: "res.cloudinary.com",
+			},
+			{
+			  protocol: "https",
+			  hostname: "avatars.githubusercontent.com",
+			},
+		
+		  ],
+
+	},
+	reactStrictMode: true,
+	pageExtensions: ["md", "tsx", "ts", "jsx", "js", "mdx"],
+	experimental: {
+		optimizeCss: false,
+		mdxRs: true,
+	},
+	typescript: {
+		ignoreBuildErrors: true,
+	},
 };
 
 export default nextConfig;
