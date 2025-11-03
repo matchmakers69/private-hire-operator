@@ -1,0 +1,16 @@
+{
+	"home": {
+		"title": "Your trusted way to travel in comfort",
+		"slogan": "Your partner for reliable transport",
+		"subtitle": "We are your go-to choice for airport transfers, embassy visits, and professional courier services across Boston and beyond.",
+		"view_more": "View more"
+	},
+	"navigation": {
+		"home": "Home",
+		"about": "About me"
+	},
+	"about": {
+		"title": "About me",
+		"description": "Hi! My name is Tomasz, and I’ve been working as a taxi driver since 2017.\nI’ve provided transport services for people with disabilities and driven children to school.\nI hold all the necessary licenses and insurance required for passenger transport.\nIf you need a ride to the airport, hospital, or any other destination, I’ll do my best to meet your needs and make sure everyone who chooses my service arrives safely at their destination."
+	}
+}

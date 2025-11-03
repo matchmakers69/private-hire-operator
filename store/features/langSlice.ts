@@ -1,38 +1,38 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-export type Language = 'english' | 'polish';
+export type Language = "eng" | "pl";
 
 interface LangState {
-  language: Language;
+	language: Language;
 }
 
 const getInitialTheme = (): Language => {
-  if (typeof window !== 'undefined') {
-    // 1. check localStorage
-    const stored = localStorage.getItem('language') as Language | null;
-    if (stored) return stored;
-  }
-  return 'english';
+	if (typeof window !== "undefined") {
+		// 1. check localStorage
+		const stored = localStorage.getItem("language") as Language | null;
+		if (stored) return stored;
+	}
+	return "pl";
 };
 
 const initialState: LangState = {
-  language: getInitialTheme(),
+	language: getInitialTheme(),
 };
 
 const languageSlice = createSlice({
-  name: 'language',
-  initialState,
-  reducers: {
-    toggleTheme: (state) => {
-      state.language = state.language === 'polish' ? 'english' : 'polish';
-      if (typeof window !== 'undefined') localStorage.setItem('language', state.language);
-    },
-    setTheme: (state, action: PayloadAction<Language>) => {
-      state.language = action.payload;
-      if (typeof window !== 'undefined') localStorage.setItem('language', state.language);
-    },
-  },
+	name: "language",
+	initialState,
+	reducers: {
+		toggleLanguage: (state) => {
+			state.language = state.language === "pl" ? "eng" : "pl";
+			if (typeof window !== "undefined") localStorage.setItem("language", state.language);
+		},
+		setLanguage: (state, action: PayloadAction<Language>) => {
+			state.language = action.payload;
+			if (typeof window !== "undefined") localStorage.setItem("language", state.language);
+		},
+	},
 });
 
-export const { toggleTheme, setTheme } = languageSlice.actions;
+export const { toggleLanguage, setLanguage } = languageSlice.actions;
 export default languageSlice.reducer;

@@ -1,196 +1,196 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @tailwind utilities;
 
 /* --- THEME CONFIG --- */
 @theme {
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --breakpoint-2xl: 1440px;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--breakpoint-2xl: 1440px;
 
-  --font-inter: var(--font-inter), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Arial;
+	--font-inter: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial;
 
-  /* Font weights */
-  --font-weight-thin-text: 300;
-  --font-weight-regular-text: 400;
-  --font-weight-semibold-text: 500;
-  --font-weight-bold-text: 800;
-  --font-weight-extra-bold-text: 900;
+	/* Font weights */
+	--font-weight-thin-text: 300;
+	--font-weight-regular-text: 400;
+	--font-weight-semibold-text: 500;
+	--font-weight-bold-text: 800;
+	--font-weight-extra-bold-text: 900;
 
-  /* Text sizes */
-  --text-xs: 1.2rem;
-  --text-base: 1.6rem;
-  --text-sm: 1.4rem;
-  --text-md: 1.8rem;
-  --text-lg: 2rem;
-  --text-xl: 3rem;
-  --text-2xl: 4rem;
+	/* Text sizes */
+	--text-xs: 1.2rem;
+	--text-base: 1.6rem;
+	--text-sm: 1.4rem;
+	--text-md: 1.8rem;
+	--text-lg: 2rem;
+	--text-xl: 3rem;
+	--text-2xl: 4rem;
 
-  /* --- COLORS (Simplified) --- */
-  --color-primary: #e13404; /* taxi red */
-  --color-secondary: #2b2c3b; /* dark navy */
-  --color-accent: #70afcb; /* optional accent */
-  --color-grey-light: #f5f6f7;
-  --color-grey-medium: #a8a8a8;
-  --color-text-dark: #2c3e50;
-  --color-white: #ffffff;
-  --color-background: #f7f8fa;
-  --color-header-blue: #009bd2;
+	/* --- COLORS (Simplified) --- */
+	--color-primary: #e13404; /* taxi red */
+	--color-secondary: #2b2c3b; /* dark navy */
+	--color-accent: #70afcb; /* optional accent */
+	--color-grey-light: #f5f6f7;
+	--color-grey-medium: #a8a8a8;
+	--color-text-dark: #2c3e50;
+	--color-white: #ffffff;
+	--color-background: #f7f8fa;
+	--color-header-blue: #009bd2;
 
-  /* --- COLORS (Taxi Brand Palette) --- */
-  --color-taxi-yellow: #ffd43b; /* główny żółty */
-  --color-taxi-red: #e13404; /* akcent / CTA */
-  --color-dark-navy: #2b2c3b; /* tło / header */
-  --color-accent-blue: #70afcb; /* delikatny akcent */
-  --color-dark-grey: #272a2d; /* do sekcji, card backgrounds */
-  --color-grey-light: #f5f6f7;
-  --color-grey-medium: #a8a8a8;
-  --color-text-dark: #2c3e50;
-  --color-text-muted: #7f8c8d;
-  --color-white: #ffffff;
-  --color-background: #e7edf1; /* delikatny błękitny, tło strony */
-  --color-background-alt: #f9f8f5; /* alternatywny odcień tła */
+	/* --- COLORS (Taxi Brand Palette) --- */
+	--color-taxi-yellow: #ffd43b; /* główny żółty */
+	--color-taxi-red: #e13404; /* akcent / CTA */
+	--color-dark-navy: #2b2c3b; /* tło / header */
+	--color-accent-blue: #70afcb; /* delikatny akcent */
+	--color-dark-grey: #272a2d; /* do sekcji, card backgrounds */
+	--color-grey-light: #f5f6f7;
+	--color-grey-medium: #a8a8a8;
+	--color-text-dark: #2c3e50;
+	--color-text-muted: #7f8c8d;
+	--color-white: #ffffff;
+	--color-background: #e7edf1; /* delikatny błękitny, tło strony */
+	--color-background-alt: #f9f8f5; /* alternatywny odcień tła */
 
-  /* --- COLORS (Social icons) --- */
-  --color-facebook: #1877f2;
-  --color-instagram: #e1306c;
-  --color-linkedin: #0077b5;
-  --color-twitter: #1da1f2;
-  --color-youtube: #ff0000;
+	/* --- COLORS (Social icons) --- */
+	--color-facebook: #1877f2;
+	--color-instagram: #e1306c;
+	--color-linkedin: #0077b5;
+	--color-twitter: #1da1f2;
+	--color-youtube: #ff0000;
 }
 
 /* Container - Center */
 .container {
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 /* Buttons - Cursor Pointer */
 @layer base {
-  button:not(:disabled),
-  [role='button']:not(:disabled) {
-    cursor: pointer;
-  }
+	button:not(:disabled),
+	[role="button"]:not(:disabled) {
+		cursor: pointer;
+	}
 }
 
 /* --- BASE RESETS --- */
 :root {
-  font-family: 'Inter', sans-serif;
-  font-weight: var(--font-weight-regular-text);
-  color: var(--color-text-dark);
-  background-color: var(--color-background);
+	font-family: "Inter", sans-serif;
+	font-weight: var(--font-weight-regular-text);
+	color: var(--color-text-dark);
+	background-color: var(--color-background);
 
-  --container-max-width-sm: 54rem;
-  --container-max-width-md: 72rem;
-  --container-max-width-lg: 96rem;
-  --container-max-width-xl: 114rem;
-  --container-max-width-2xl: 132rem;
+	--container-max-width-sm: 54rem;
+	--container-max-width-md: 72rem;
+	--container-max-width-lg: 96rem;
+	--container-max-width-xl: 114rem;
+	--container-max-width-2xl: 132rem;
 
-  /* Button colors */
-  --color-btn-primary: var(--color-taxi-yellow);
-  --color-btn-primary-hover: #ffcc00;
-  --color-btn-secondary: var(--color-dark-navy);
-  --color-btn-secondary-hover: #3b3c4a;
+	/* Button colors */
+	--color-btn-primary: var(--color-taxi-yellow);
+	--color-btn-primary-hover: #ffcc00;
+	--color-btn-secondary: var(--color-dark-navy);
+	--color-btn-secondary-hover: #3b3c4a;
 }
 
 /* --- CONTAINERS --- */
 @layer components {
-  .wrapper {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 3rem;
-    margin: 0 auto;
+	.wrapper {
+		width: 100%;
+		max-width: 100%;
+		padding: 0 3rem;
+		margin: 0 auto;
 
-    @media (min-width: 640px) {
-      max-width: var(--container-max-width-sm);
-    }
-    @media (min-width: 768px) {
-      max-width: var(--container-max-width-md);
-    }
-    @media (min-width: 992px) {
-      max-width: var(--container-max-width-lg);
-    }
-    @media (min-width: 1200px) {
-      max-width: var(--container-max-width-xl);
-    }
-    @media (min-width: 1440px) {
-      max-width: var(--container-max-width-2xl);
-    }
-  }
+		@media (min-width: 640px) {
+			max-width: var(--container-max-width-sm);
+		}
+		@media (min-width: 768px) {
+			max-width: var(--container-max-width-md);
+		}
+		@media (min-width: 992px) {
+			max-width: var(--container-max-width-lg);
+		}
+		@media (min-width: 1200px) {
+			max-width: var(--container-max-width-xl);
+		}
+		@media (min-width: 1440px) {
+			max-width: var(--container-max-width-2xl);
+		}
+	}
 }
 
 /* --- BASE TYPOGRAPHY --- */
 @layer base {
-  html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-  }
+	html {
+		font-size: 62.5%;
+		scroll-behavior: smooth;
+	}
 
-  body {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: var(--color-text-dark);
-    background-color: var(--color-background);
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
+	body {
+		font-size: 1.6rem;
+		line-height: 1.6;
+		color: var(--color-text-dark);
+		background-color: var(--color-background);
+		-webkit-font-smoothing: antialiased;
+		overflow-x: hidden;
+	}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-inter);
-    color: var(--color-secondary);
-    font-weight: var(--font-weight-bold-text);
-    margin: 0;
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-inter);
+		color: var(--color-secondary);
+		font-weight: var(--font-weight-bold-text);
+		margin: 0;
+	}
 
-  h1,
-  h2 {
-    font-weight: var(--font-weight-extra-bold-text);
-  }
+	h1,
+	h2 {
+		font-weight: var(--font-weight-extra-bold-text);
+	}
 
-  h3 {
-    @apply text-[2.4rem] sm:text-[3rem];
-  }
-  h4 {
-    @apply text-[2rem] sm:text-[2.4rem];
-  }
-  h5 {
-    @apply text-[1.8rem];
-  }
-  p {
-    @apply sm:text-md text-[1.6rem];
-  }
+	h3 {
+		@apply text-[2.4rem] sm:text-[3rem];
+	}
+	h4 {
+		@apply text-[2rem] sm:text-[2.4rem];
+	}
+	h5 {
+		@apply text-[1.8rem];
+	}
+	p {
+		@apply sm:text-md text-[1.6rem];
+	}
 }
 
 /* --- BUTTON UTILS --- */
 @layer components {
-  .btn-primary {
-    @apply inline-block rounded-full bg-(--color-primary) px-8 py-3 font-semibold text-white shadow-md transition-all hover:shadow-lg hover:brightness-110;
-  }
+	.btn-primary {
+		@apply inline-block rounded-full bg-(--color-primary) px-8 py-3 font-semibold text-white shadow-md transition-all hover:shadow-lg hover:brightness-110;
+	}
 }
 
 /* --- ANIMATIONS --- */
 .fade-in-top {
-  animation: fade-in-top 0.3s ease-out both;
+	animation: fade-in-top 0.3s ease-out both;
 }
 @keyframes fade-in-top {
-  0% {
-    transform: translateY(-1rem);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+	0% {
+		transform: translateY(-1rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }

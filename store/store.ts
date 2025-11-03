@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit';
-import languageReducer from './features/langSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import languageReducer from "./features/langSlice";
 
 export const store = configureStore({
-  reducer: { language: languageReducer },
+	reducer: { language: languageReducer },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

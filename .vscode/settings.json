@@ -1,25 +1,29 @@
 {
-  "[typescript]": {
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.fixAll.format": "explicit"
-  },
-  // 🧠 ESLint — Flat Config (Next 15+ / ESLint 9)
-  "eslint.useFlatConfig": true,
+	"[typescript]": {
+		"editor.formatOnPaste": false,
+		"editor.formatOnSave": false
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.format": "explicit"
+	},
+	// 🧠 ESLint — Flat Config (Next 15+ / ESLint 9)
+	"eslint.useFlatConfig": true,
 
-  // ✨ Używaj ESLinta jako głównego formattera
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "WillLuke.nextjs.addTypesOnSave": true,
-  "WillLuke.nextjs.hasPrompted": true,
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  }
+	// ✨ Używaj ESLinta jako głównego formattera
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"WillLuke.nextjs.addTypesOnSave": true,
+	"WillLuke.nextjs.hasPrompted": true,
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
+	"i18n-ally.enabledParsers": ["json"],
+	"i18n-ally.keystyle": "nested",
+	"i18n-ally.localesPaths": ["messages"],
+	"i18n-ally.namespace": true
 }

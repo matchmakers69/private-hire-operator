@@ -1,37 +1,46 @@
-'use client';
+"use client";
 
-import { type ReactNode } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { type LinkProps } from 'next/link';
-import { cn } from '@/shared/utils';
+import { type ReactNode } from "react";
+import { cn } from "@/shared/utils";
+import { usePathname, Link } from "@/i18n/navigation";
 
-export type NavLinkProps = LinkProps & {
-  children: ReactNode;
-  className?: string;
+export type NavLinkProps = {
+	children: ReactNode;
+	className?: string;
+	href: string;
 };
+
 const NavLink = ({
-  href,
-  children,
-  className,
-  classNameActive,
-  ...props
+	href,
+	children,
+	className,
+	classNameActive,
+	...props
 }: NavLinkProps & { classNameActive?: string }) => {
-  const currentPath = usePathname();
-  const isActive = currentPath === href;
+	const pathname = usePathname();
 
-  return (
-    <Link
-      href={href}
-      className={cn(
-        'focus-visible:ring-ring focus:ring-1 focus:outline-none',
-        className,
-        isActive && classNameActive
-      )}
-      {...props}
-    >
-      {children}
-    </Link>
-  );
+	const isActive = (href: string) => {
+		// Dla home page
+		if (href === "/") {
+			return pathname === "/";
+		}
+		// Dla innych stron
+		return pathname === href || pathname.startsWith(`${href}/`);
+	};
+
+	return (
+		<Link
+			href={href}
+			className={cn(
+				"focus-visible:ring-ring focus:ring-1 focus:outline-none",
+				className,
+				isActive(href) && classNameActive,
+			)}
+			{...props}
+		>
+			{children}
+		</Link>
+	);
 };
+
 export default NavLink;
