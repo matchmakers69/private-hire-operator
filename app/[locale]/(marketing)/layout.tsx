@@ -16,10 +16,13 @@ export const metadata: Metadata = {
 
 export default function PageLayout({ children }: Readonly<{ children: ReactNode }>) {
 	return (
-		<>
+		<div className="flex flex-col min-h-screen">
 			<Navbar />
-			<main className="flex min-h-screen flex-col justify-center">{children}</main>
+
+			{/* main grows to fill available space, but not taller than content */}
+			<main className="grow">{children}</main>
+
 			<Footer />
-		</>
+		</div>
 	);
 }

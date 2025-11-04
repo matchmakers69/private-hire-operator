@@ -1,7 +1,7 @@
-import { HeroSection } from "@/shared/ui/HeroSection";
-import { ServicesSection } from "@/shared/ui/ServicesSection";
-
 import type { Metadata } from "next";
+import { HeroSection } from "@/app/[locale]/(marketing)/_components/HeroSection";
+import { ServicesSection } from "./_components/ServicesSection";
+import { WhyMeSection } from "./_components/WhyMeSection";
 
 export const metadata: Metadata = {
 	title: "Boston Private Hire Transport | Reliable Airport & Courier Service",
@@ -27,6 +27,7 @@ function HomePage() {
 		<>
 			<HeroSection />
 			<ServicesSection />
+			<WhyMeSection />
 		</>
 	);
 }

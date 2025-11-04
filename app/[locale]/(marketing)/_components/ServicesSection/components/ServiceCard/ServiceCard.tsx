@@ -6,10 +6,9 @@ type ServiceCardProps = {
 	description: string;
 };
 
-// Service Card Component - based on screenshot
 const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
 	return (
-		<div className="group relative overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl">
+		<div className="group relative fade-in-top overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl">
 			{/* Image Container */}
 			<div className="relative h-72 w-full overflow-hidden">
 				<Image
@@ -23,8 +22,8 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
 
 			{/* White Content Box */}
 			<div className="bg-white p-8 text-center">
-				<h3 className="text-text-dark mb-4 text-2xl font-bold">{title}</h3>
-				{description && <p className="text-text-muted mb-6 text-base">{description}</p>}
+				<h3 className="mb-4 text-text-dark">{title}</h3>
+				{description && <p className="mb-6 text-base text-text-muted">{description}</p>}
 			</div>
 		</div>
 	);

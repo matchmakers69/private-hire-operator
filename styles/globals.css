@@ -50,7 +50,7 @@
 	--color-text-muted: #7f8c8d;
 	--color-white: #ffffff;
 	--color-background: #e7edf1; /* delikatny błękitny, tło strony */
-	--color-background-alt: #f9f8f5; /* alternatywny odcień tła */
+	--color-background-alt: #d7e1e8; /* alternatywny odcień tła */
 
 	/* --- COLORS (Social icons) --- */
 	--color-facebook: #1877f2;
@@ -65,14 +65,6 @@
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
-}
-
-/* Buttons - Cursor Pointer */
-@layer base {
-	button:not(:disabled),
-	[role="button"]:not(:disabled) {
-		cursor: pointer;
-	}
 }
 
 /* --- BASE RESETS --- */
@@ -93,6 +85,11 @@
 	--color-btn-primary-hover: #ffcc00;
 	--color-btn-secondary: var(--color-dark-navy);
 	--color-btn-secondary-hover: #3b3c4a;
+
+	--container-narrow-max-width-sm: 54rem;
+	--container-narrow-max-width-md: 64rem;
+	--container-narrow-max-width-lg: 72rem;
+	--container-narrow-max-width-2xl: 90rem;
 }
 
 /* --- CONTAINERS --- */
@@ -117,6 +114,27 @@
 		}
 		@media (min-width: 1440px) {
 			max-width: var(--container-max-width-2xl);
+		}
+	}
+
+	.wrapper-narrow {
+		max-width: 100%;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		margin-left: auto;
+		margin-right: auto;
+
+		@media (min-width: 640px) {
+			max-width: var(--container-narrow-max-width-sm);
+		}
+		@media (min-width: 768px) {
+			max-width: var(--container-narrow-max-width-md);
+		}
+		@media (min-width: 992px) {
+			max-width: var(--container-narrow-max-width-lg);
+		}
+		@media (min-width: 1200px) {
+			max-width: var(--container-narrow-max-width-2xl);
 		}
 	}
 }
@@ -159,9 +177,6 @@
 		font-weight: var(--font-weight-extra-bold-text);
 	}
 
-	h3 {
-		@apply text-[2.4rem] sm:text-[3rem];
-	}
 	h4 {
 		@apply text-[2rem] sm:text-[2.4rem];
 	}
@@ -170,6 +185,23 @@
 	}
 	p {
 		@apply sm:text-md text-[1.6rem];
+	}
+
+	button:not(:disabled),
+	[role="button"]:not(:disabled) {
+		cursor: pointer;
+	}
+
+	h1 {
+		font-size: clamp(2.8rem, 3vw + 1.5rem, 6rem);
+	}
+
+	h2,
+	.header-two {
+		font-size: clamp(2.4rem, 2vw + 1.5rem, 4rem);
+	}
+	h3 {
+		font-size: clamp(2rem, 2vw + 1.5rem, 3rem);
 	}
 }
 

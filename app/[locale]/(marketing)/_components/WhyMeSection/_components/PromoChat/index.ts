@@ -1,0 +1,1 @@
+export { default as PromoChat } from "./PromoChat";

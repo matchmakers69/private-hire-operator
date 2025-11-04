@@ -13,8 +13,8 @@ const button = cva(
 			},
 			size: {
 				sm: "h-8 px-3 text-sm",
-				md: "h-16 px-6 text-base",
-				lg: "h-20 px-12 text-lg",
+				md: "h-16 px-12 text-base",
+				lg: "h-20 px-20 text-md",
 			},
 		},
 		defaultVariants: {

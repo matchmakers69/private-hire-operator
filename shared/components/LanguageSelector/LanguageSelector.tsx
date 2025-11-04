@@ -23,14 +23,14 @@ export default function LanguageSelector() {
 	};
 
 	return (
-		<div className="relative inline-block w-[110px] sm:w-[130px]">
+		<div className="relative inline-block w-50 sm:w-56">
 			<select
 				id="language-select"
 				name="language"
 				aria-label="Select language"
 				value={selectedLocale}
 				onChange={(e) => switchLocale(e.target.value)}
-				className="w-full cursor-pointer appearance-none rounded-full border border-(--color-dark-navy) bg-white py-2 pr-10 pl-14 text-[1.4rem] font-semibold text-(--color-dark-navy) shadow-sm transition-all hover:border-(--color-accent-blue) hover:shadow-md focus:ring-2 focus:ring-(--color-accent-blue) focus:outline-none sm:text-[1.5rem]"
+				className="w-full cursor-pointer appearance-none rounded-full border border-(--color-dark-navy) bg-white py-2 pr-12 pl-16 text-[1.4rem] font-semibold text-(--color-dark-navy) shadow-sm transition-all hover:border-(--color-accent-blue) hover:shadow-md focus:ring-2 focus:ring-(--color-accent-blue) focus:outline-none sm:text-[1.5rem]"
 			>
 				<option value="en">English</option>
 				<option value="pl">Polski</option>
@@ -43,7 +43,7 @@ export default function LanguageSelector() {
 					alt="English"
 					width={20}
 					height={20}
-					className="pointer-events-none absolute top-1/2 left-3 -translate-y-1/2"
+					className="pointer-events-none absolute top-1/2 left-4 -translate-y-1/2"
 				/>
 			)}
 			{selectedLocale === "pl" && (
@@ -52,7 +52,7 @@ export default function LanguageSelector() {
 					alt="Polski"
 					width={20}
 					height={20}
-					className="pointer-events-none absolute top-1/2 left-3 -translate-y-1/2"
+					className="pointer-events-none absolute top-1/2 left-4 -translate-y-1/2"
 				/>
 			)}
 			<svg

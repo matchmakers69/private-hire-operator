@@ -13,7 +13,7 @@ type LogoProps = {
 
 function Logo({
 	width = 120,
-	height = 80,
+	height = 90,
 	className = "",
 	priority = true,
 	linkToHome = true,
@@ -26,7 +26,7 @@ function Logo({
 
 	if (linkToHome) {
 		return (
-			<Link href="/" className="inline-block">
+			<Link href="/" className="inline-flex">
 				{logoImage}
 			</Link>
 		);

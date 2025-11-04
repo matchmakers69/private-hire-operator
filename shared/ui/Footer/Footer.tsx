@@ -29,13 +29,7 @@ function Footer() {
 								href="https://facebook.com/your-page"
 								iconName="facebook-fill"
 								label="Visit our Facebook page"
-								className="facebook-icon bg-(--color-facebook) hover:brightness-110"
-							/>
-							<SocialLink
-								href="https://instagram.com/your-page"
-								iconName="instagram-fill"
-								label="Visit our Instagram page"
-								className="instagram-icon bg-(--color-instagram) hover:brightness-110"
+								className="facebook-icon bg-facebook hover:brightness-110"
 							/>
 						</div>
 					</div>
@@ -46,7 +40,7 @@ function Footer() {
 						<div className="flex flex-col gap-4">
 							<h3 className="text-[2rem] font-bold text-white">Contact Us</h3>
 							<div className="flex flex-col gap-2 text-[1.5rem] text-gray-300">
-								<a href="tel:+447411853262" className="transition-colors hover:text-(--color-taxi-yellow)">
+								<a href="tel:+447411853262" className="transition-colors hover:text-taxi-yellow">
 									+44 7411 853262
 								</a>
 								<p>Boston, Lincolnshire</p>
@@ -59,10 +53,10 @@ function Footer() {
 				{/* Bottom Section - Links & Copyright */}
 				<div className="mt-12 flex flex-col items-center gap-6 border-t border-gray-700 pt-8 md:flex-row md:justify-between">
 					<nav className="flex flex-wrap justify-center gap-6 text-[1.4rem]">
-						<Link href="/" className="transition-colors hover:text-(--color-taxi-yellow)">
+						<Link href="/" className="transition-colors hover:text-taxi-yellow">
 							Home
 						</Link>
-						<Link href="/about-me" className="transition-colors hover:text-(--color-taxi-yellow)">
+						<Link href="/about-me" className="transition-colors hover:text-taxi-yellow">
 							About Us
 						</Link>
 					</nav>
