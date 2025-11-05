@@ -1,13 +1,13 @@
 import { Logo } from "@/shared/ui/Logo";
 import { SocialLink } from "@/shared/components/SocialLink";
 import Image from "next/image";
-//import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { HeaderTwo } from "../HeaderTwo";
 import { Button } from "@/shared/components/Button";
+import { NavLink } from "../NavLink";
 
 function Footer() {
-  //const t = useTranslations("footer");
+  const t = useTranslations("footer");
 
   return (
     <footer className="bg-(--color-dark-navy) mt-[190px] pb-20 xl:pb-[130px] text-white">
@@ -39,10 +39,7 @@ function Footer() {
               linkToHome={true}
               className="footer-logo-image h-auto w-30 lg:w-48"
             />
-            <p className="max-w-sm text-[1.5rem] leading-relaxed text-gray-300">
-              Professional private hire transport based in Boston, UK. Reliable passenger transfers and
-              courier services since 2017.
-            </p>
+            <p className="max-w-sm text-[1.5rem] leading-relaxed text-gray-300">{t("footer_text_content")}</p>
 
             <div className="flex gap-4">
               <SocialLink
@@ -72,16 +69,25 @@ function Footer() {
 
         <div className="mt-12 flex flex-col items-center gap-6 border-t border-gray-700 pt-8 md:flex-row md:justify-between">
           <nav className="flex flex-wrap justify-center gap-6 text-[1.4rem]">
-            <Link href="/" className="transition-colors hover:text-taxi-yellow">
-              Home
-            </Link>
-            <Link href="/about-me" className="transition-colors hover:text-taxi-yellow">
-              About Us
-            </Link>
+            <NavLink
+              className="transition-colors hover:text-taxi-yellow"
+              classNameActive="text-taxi-yellow no-underline border-0 select-none"
+              href="/"
+            >
+              <span className="text-inherit">{t("home_link")}</span>
+            </NavLink>
+
+            <NavLink
+              className="transition-colors hover:text-taxi-yellow"
+              classNameActive="text-taxi-yellow no-underline border-0 select-none"
+              href="/about-me"
+            >
+              <span className="text-inherit">{t("about_link")}</span>
+            </NavLink>
           </nav>
 
           <p className="text-[1.3rem] text-gray-400">
-            © {new Date().getFullYear()} Private Hire Operator. All rights reserved.
+            © {new Date().getFullYear()} {t("copyright")}
           </p>
         </div>
       </div>

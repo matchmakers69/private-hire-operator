@@ -13,5 +13,11 @@
 	"about": {
 		"title": "About me",
 		"description": "Hi! My name is Tomasz, and I’ve been working as a taxi driver since 2017.\nI’ve provided transport services for people with disabilities and driven children to school.\nI hold all the necessary licenses and insurance required for passenger transport.\nIf you need a ride to the airport, hospital, or any other destination, I’ll do my best to meet your needs and make sure everyone who chooses my service arrives safely at their destination."
+	},
+	"footer": {
+		"home_link": "Home",
+		"about_link": "About me",
+		"copyright": "Private Hire Operator. All rights reserved.",
+		"footer_text_content":"Professional private hire transport based in Boston, UK. Reliable passenger transfers and courier services since 2017."
 	}
 }
