@@ -31,7 +31,7 @@
 	--color-primary: #e13404; /* taxi red */
 	--color-secondary: #2b2c3b; /* dark navy */
 	--color-accent: #70afcb; /* optional accent */
-	--color-grey-light: #f5f6f7;
+	--color-grey-light: #f1f2f4;
 	--color-grey-medium: #a8a8a8;
 	--color-text-dark: #2c3e50;
 	--color-white: #ffffff;
@@ -166,7 +166,6 @@
 	h4,
 	h5,
 	h6 {
-		font-family: var(--font-inter);
 		color: var(--color-secondary);
 		font-weight: var(--font-weight-bold-text);
 		margin: 0;
@@ -193,7 +192,7 @@
 	}
 
 	h1 {
-		font-size: clamp(2.8rem, 3vw + 1.5rem, 6rem);
+		font-size: clamp(2.8rem, 4vw + 1.5rem, 7rem);
 	}
 
 	h2,
@@ -202,13 +201,6 @@
 	}
 	h3 {
 		font-size: clamp(2rem, 2vw + 1.5rem, 3rem);
-	}
-}
-
-/* --- BUTTON UTILS --- */
-@layer components {
-	.btn-primary {
-		@apply inline-block rounded-full bg-(--color-primary) px-8 py-3 font-semibold text-white shadow-md transition-all hover:shadow-lg hover:brightness-110;
 	}
 }
 

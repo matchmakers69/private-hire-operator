@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { AnchorButton } from "@/shared/components/AnchorButton";
 import Image from "next/image";
 import { HeaderOne } from "@/shared/ui/HeaderOne";
+import { Button } from "@/shared/components/Button";
 
 function HeroSection() {
 	const t = useTranslations("home");
@@ -18,21 +19,22 @@ function HeroSection() {
 							<p className="md:text-md mb-4 text-sm font-medium tracking-wider text-(--color-secondary) uppercase">
 								{t("slogan")}
 							</p>
-							<HeaderOne className="mb-4">{t("title")}</HeaderOne>
-							<p className="mb-16 font-medium text-(--color-secondary) lg:mb-14">
-								We are your go-to choice for airport transfers, embassy visits, and professional courier
-								services across Boston and beyond.
-							</p>
+							<HeaderOne className="mb-16">{t("title")}</HeaderOne>
+							<p className="mb-16 font-medium text-(--color-secondary) lg:mb-28">{t("subtitle")}</p>
 
-							<AnchorButton href="#services" intent="primary" size="lg">
-								View more
-							</AnchorButton>
+							<div className="flex gap-10 items-center">
+								<AnchorButton href="#services" intent="primary" size="lg">
+									{t("view_more_btn")}
+								</AnchorButton>
+								<Button type="button" intent="secondary" size="lg">
+									{t("book_btn")}
+								</Button>
+							</div>
 						</div>
 					</div>
 
-					{/* Kolumna z obrazkiem - responsywna wysokość */}
 					<div className="relative order-1 flex items-center justify-center lg:order-2 lg:justify-end">
-						<div className="relative aspect-4/3 w-full max-w-[500px] lg:aspect-auto lg:h-[60vh] lg:max-w-none xl:h-[70vh]">
+						<div className="relative aspect-4/3 w-full max-w-[500px] lg:aspect-auto lg:h-[65vh] lg:max-w-none xl:h-[72vh]">
 							<Image
 								src="/web-icons/yellow-car-mobile.png"
 								alt="Private hire vehicle in Boston UK hero image"

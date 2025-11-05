@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import React from "react";
 
 const anchorButton = cva(
-	"inline-flex items-center justify-center leading-none rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",
+	"inline-flex items-center justify-center leading-none font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",
 	{
 		variants: {
 			intent: {
@@ -17,7 +17,7 @@ const anchorButton = cva(
 			size: {
 				sm: "h-8 px-3 text-sm",
 				md: "h-16 px-12 text-base",
-				lg: "h-20 px-20 text-md",
+				lg: "h-20 px-18 text-md",
 			},
 			rounded: {
 				full: "rounded-full",

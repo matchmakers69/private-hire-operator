@@ -2,8 +2,9 @@
 	"home": {
 		"title": "Your trusted way to travel in comfort",
 		"slogan": "Your partner for reliable transport",
-		"subtitle": "We are your go-to choice for airport transfers, embassy visits, and professional courier services across Boston and beyond.",
-		"view_more": "View more"
+		"subtitle": "I offer reliable private hire transport for airport transfers, embassy visits, and courier services across Boston and beyond.",
+		"view_more_btn": "View more",
+		"book_btn": "Book now"
 	},
 	"navigation": {
 		"home": "Home",

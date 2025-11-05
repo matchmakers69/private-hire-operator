@@ -23,7 +23,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
 			{/* White Content Box */}
 			<div className="bg-white p-8 text-center">
 				<h3 className="mb-4 text-text-dark">{title}</h3>
-				{description && <p className="mb-6 text-base text-text-muted">{description}</p>}
+				{description && <p className="mb-6 text-md text-text-dark">{description}</p>}
 			</div>
 		</div>
 	);

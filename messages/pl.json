@@ -2,8 +2,9 @@
 	"home": {
 		"title": "Twój sposób na komfortową podróż",
 		"slogan": "Sprawdzony partner w drodze",
-		"subtitle": "Jesteśmy Twoim wyborem dla transferów lotniskowych, wizyt w ambasadzie i profesjonalnych usług kurierskich w całym Bostonie i poza nim.",
-		"view_more": "Zobacz więcej"
+		"subtitle": "Oferuję niezawodny transport prywatny na transfery lotniskowe, wizyty w ambasadach oraz usługi kurierskie w Bostonie i okolicach.",
+		"view_more_btn": "Zobacz więcej",
+		"book_btn": "Zarezerwuj teraz"
 	},
 	"navigation": {
 		"home": "Strona główna",
