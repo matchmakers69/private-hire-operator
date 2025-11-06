@@ -1,23 +1,40 @@
 {
-	"home": {
-		"title": "Twój sposób na komfortową podróż",
-		"slogan": "Sprawdzony partner w drodze",
-		"subtitle": "Oferuję niezawodny transport prywatny na transfery lotniskowe, wizyty w ambasadach oraz usługi kurierskie w Bostonie i okolicach.",
-		"view_more_btn": "Zobacz więcej",
-		"book_btn": "Zarezerwuj teraz"
-	},
-	"navigation": {
-		"home": "Strona główna",
-		"about": "O mnie"
-	},
-	"about": {
-		"title": "O mnie",
-		"description": "Cześć! Mam na imię Tomasz i jestem kierowcą taksówki od 2017 roku. Świadczyłem usługi przewozowe dla osób niepełnosprawnych oraz dowoziłem dzieci do szkoły. Posiadam wszystkie niezbędne licencje i ubezpieczenie związane z transportem. Jeśli potrzebujesz dojechać na lotnisko, do szpitala lub w inne wybrane miejsce, dołożę wszelkich starań, aby sprostać Twoim wymaganiom i bezpiecznie dowieźć Cię do celu."
-	},
-	"footer": {
-		"home_link": "Strona główna",
-		"about_link": "O mnie",
-		"copyright": "Private Hire Operator. Wszelkie prawa zastrzeżone.",
-		"footer_text_content":"Profesjonalny transport prywatny z siedzibą w Bostonie (Wielka Brytania). Niezawodne przewozy pasażerskie i usługi kurierskie od 2017 roku."
-	}
+  "home": {
+    "title": "Twój sposób na komfortową podróż",
+    "slogan": "Sprawdzony partner w drodze",
+    "subtitle": "Oferuję niezawodny transport prywatny na transfery lotniskowe, wizyty w ambasadach oraz usługi kurierskie w Bostonie i okolicach.",
+    "view_more_btn": "Zobacz więcej",
+    "book_btn": "Zarezerwuj teraz"
+  },
+  "navigation": {
+    "home": "Strona główna",
+    "about": "O mnie"
+  },
+  "about": {
+    "title": "O mnie",
+    "description": "Cześć! Mam na imię Tomasz i jestem kierowcą taksówki od 2017 roku. Świadczyłem usługi przewozowe dla osób niepełnosprawnych oraz dowoziłem dzieci do szkoły. Posiadam wszystkie niezbędne licencje i ubezpieczenie związane z transportem. Jeśli potrzebujesz dojechać na lotnisko, do szpitala lub w inne wybrane miejsce, dołożę wszelkich starań, aby sprostać Twoim wymaganiom i bezpiecznie dowieźć Cię do celu."
+  },
+  "services": {
+	"section_title": "Profesjonalne usługi transportowe",
+	"section_subtitle": "Moja oferta",
+	"view_more_btn": "Zobacz więcej",
+	
+    "airport_transfers": "Transport na lotnisko",
+    "embassy_visits": "Wizyty w ambasadach",
+    "hospital_transfers": "Przewozy do szpitala",
+    "eu_travel": "Transport pasażerski po UK i Europie",
+    "courier_services": "Drobne usługi kurierskie",
+
+    "airport_transfers_description": "Niezawodne i komfortowe przewozy na lotnisko",
+    "embassy_visits_description": "Profesjonalny transport na spotkania w ambasadach",
+    "hospital_transfers_description": "Bezpieczne i punktualne przewozy do szpitala",
+    "eu_travel_description": "Długodystansowy przewóz osobowy po UK i Europie",
+    "courier_services_description": "Szybkie i bezpieczne przewozy dokumentów i paczek"
+  },
+  "footer": {
+    "home_link": "Strona główna",
+    "about_link": "O mnie",
+    "copyright": "Private Hire Operator. Wszelkie prawa zastrzeżone.",
+    "footer_text_content": "Profesjonalny transport prywatny z siedzibą w Bostonie (Wielka Brytania). Niezawodne przewozy pasażerskie i usługi kurierskie od 2017 roku."
+  }
 }

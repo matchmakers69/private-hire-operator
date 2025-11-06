@@ -1,32 +1,27 @@
 [
-	{
-		"id": 1,
-		"image": "/images/service-airport.jpg",
-		"title": "Airport Transfers",
-		"description": "Reliable and comfortable airport transportation services"
-	},
-	{
-		"id": 2,
-		"image": "/images/service-embassy.jpg",
-		"title": "Embassy Visits",
-		"description": "Professional transport to embassy appointments"
-	},
-	{
-		"id": 3,
-		"image": "/images/service-hospital.jpg",
-		"title": "Hospital Transfers",
-		"description": "Safe and punctual medical appointment transport"
-	},
-	{
-		"id": 4,
-		"image": "/images/driver.jpg",
-		"title": "EU Travel",
-		"description": "Long-distance passenger transport across Europe"
-	},
-	{
-		"id": 5,
-		"image": "/images/courier-service.jpg",
-		"title": "Courier Services",
-		"description": "Fast and secure document and package delivery"
-	}
+  {
+    "id": 1,
+    "image": "/images/service-airport.jpg",
+    "key": "airport_transfers"
+  },
+  {
+    "id": 2,
+    "image": "/images/service-embassy.jpg",
+    "key": "embassy_visits"
+  },
+  {
+    "id": 3,
+    "image": "/images/service-hospital.jpg",
+    "key": "hospital_transfers"
+  },
+  {
+    "id": 4,
+    "image": "/images/driver.jpg",
+    "key": "eu_travel"
+  },
+  {
+    "id": 5,
+    "image": "/images/courier-service.jpg",
+    "key": "courier_services"
+  }
 ]
