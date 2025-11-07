@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { AnchorButton } from "@/shared/components/AnchorButton";
 import Image from "next/image";
 import { HeaderOne } from "@/shared/ui/HeaderOne";
-import { Button } from "@/shared/components/Button";
+import { OpenModalButton } from "@/shared/components/OpenModalButton";
 
 function HeroSection() {
   const t = useTranslations("home");
@@ -26,9 +26,11 @@ function HeroSection() {
                 <AnchorButton href="#services" intent="primary" size="lg">
                   {t("view_more_btn")}
                 </AnchorButton>
-                <Button type="button" intent="secondary" size="lg">
-                  {t("book_btn")}
-                </Button>
+                <OpenModalButton
+                  buttonText={t("book_btn")}
+                  modalType="form"
+                  modalProps={{ formId: "book-ride" }}
+                />
               </div>
             </div>
           </div>
