@@ -46,7 +46,7 @@ export const getDefaultSx = (sx: SxProps<Theme> = {}): SxProps<Theme> => ({
 	},
 
 	"& .MuiInputBase-input": {
-		fontSize: "var(--text-base)",
+		fontSize: "var(--text-sm)",
 		color: "var(--color-text-dark)",
 		"&::placeholder": {
 			opacity: 0.4,
@@ -55,7 +55,7 @@ export const getDefaultSx = (sx: SxProps<Theme> = {}): SxProps<Theme> => ({
 	},
 
 	"& .MuiOutlinedInput-root": {
-		fontSize: "var(--text-base)",
+		fontSize: "var(--text-sm)",
 		color: "var(--color-text-dark)",
 		borderRadius: "1rem",
 		transition: "border-color 120ms ease-in",

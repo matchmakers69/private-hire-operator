@@ -4,17 +4,19 @@
     "slogan": "Your partner for reliable transport",
     "subtitle": "I offer reliable private hire transport for airport transfers, embassy visits, and courier services across Boston and beyond.",
     "view_more_btn": "View more",
-    "book_btn": "Book now"
+    "book_btn": "Book now",
+    "transport_booking": "Private Hire Booking Form",
+    "close_btn": "Close"
   },
   "navigation": {
     "home": "Home",
     "about": "About me"
   },
   "services": {
-	"section_title": "Professional Transport Solutions",
-	"section_subtitle": "My services",
-	 "view_more_btn": "View more",
-	 
+    "section_title": "Professional Transport Solutions",
+    "section_subtitle": "My services",
+    "view_more_btn": "View more",
+
     "airport_transfers": "Airport Transfers",
     "embassy_visits": "Embassy Visits",
     "hospital_transfers": "Hospital Transfers",
@@ -35,6 +37,12 @@
     "home_link": "Home",
     "about_link": "About me",
     "copyright": "Private Hire Operator. All rights reserved.",
-    "footer_text_content": "Professional private hire transport based in Boston, UK. Reliable passenger transfers and courier services since 2017."
+    "footer_text_content": "Professional private hire transport based in Boston, UK. Reliable passenger transfers and courier services since 2017.",
+    "view_more_btn": "View more",
+    "book_btn": "Book now",
+    "transport_booking": "Private Hire Booking Form",
+    "close_btn": "Close",
+    "banner_title": "Ready to get started? Talk to me today!",
+    "banner_slogan": "I offer reliable private hire transport for airport transfers, embassy visits, and courier services across Boston and beyond."
   }
 }

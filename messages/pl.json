@@ -4,7 +4,9 @@
     "slogan": "Sprawdzony partner w drodze",
     "subtitle": "Oferuję niezawodny transport prywatny na transfery lotniskowe, wizyty w ambasadach oraz usługi kurierskie w Bostonie i okolicach.",
     "view_more_btn": "Zobacz więcej",
-    "book_btn": "Zarezerwuj teraz"
+    "book_btn": "Zarezerwuj teraz",
+    "transport_booking": "Rezerwacja przejazdu",
+    "close_btn": "Zamknij"
   },
   "navigation": {
     "home": "Strona główna",
@@ -35,6 +37,12 @@
     "home_link": "Strona główna",
     "about_link": "O mnie",
     "copyright": "Private Hire Operator. Wszelkie prawa zastrzeżone.",
-    "footer_text_content": "Profesjonalny transport prywatny z siedzibą w Bostonie (Wielka Brytania). Niezawodne przewozy pasażerskie i usługi kurierskie od 2017 roku."
+    "footer_text_content": "Profesjonalny transport prywatny z siedzibą w Bostonie (Wielka Brytania). Niezawodne przewozy pasażerskie i usługi kurierskie od 2017 roku.",
+    "view_more_btn": "Zobacz więcej",
+    "book_btn": "Zarezerwuj teraz",
+    "transport_booking": "Rezerwacja przejazdu",
+    "close_btn": "Zamknij",
+    "banner_title": "Gotowi, aby rozpocząć? Skontaktuj się ze mną już dziś!",
+    "banner_slogan": "Oferuję bezpieczny, niezawodny i komfortowy transport prywatny na lotniska, do ambasad, szpitali i nie tylko."
   }
 }

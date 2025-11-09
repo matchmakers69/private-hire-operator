@@ -29,7 +29,11 @@ function HeroSection() {
                 <OpenModalButton
                   buttonText={t("book_btn")}
                   modalType="form"
-                  modalProps={{ formId: "book-ride" }}
+                  modalProps={{
+                    formId: "book-ride",
+                    title: t("transport_booking"),
+                    closeButton: t("close_btn"),
+                  }}
                 />
               </div>
             </div>

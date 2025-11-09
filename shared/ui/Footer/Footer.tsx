@@ -3,8 +3,8 @@ import { SocialLink } from "@/shared/components/SocialLink";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { HeaderTwo } from "../HeaderTwo";
-import { Button } from "@/shared/components/Button";
 import { NavLink } from "../NavLink";
+import { OpenModalButton } from "@/shared/components/OpenModalButton";
 
 function Footer() {
   const t = useTranslations("footer");
@@ -14,11 +14,17 @@ function Footer() {
       <div className="wrapper base-container">
         <div className="banner-cta rounded-4xl mb-[70px] xl:mb-[70px] overflow-hidden relative mt-[-190px] pt-[30px] pb-[30px] lg:pt-[50px] lg:pb-[50px] pl-[30px] pr-[30px] lg:pl-30 bg-grey-light">
           <div className="cta-content w-full max-w-full lg:max-w-[50%]">
-            <HeaderTwo className="mb-10">Ready to get started? Let’s talk to us today</HeaderTwo>
-            <p className="mb-16 font-medium text-text-dark">Some text will be added</p>
-            <Button type="button" intent="secondary" size="lg">
-              Book now
-            </Button>
+            <HeaderTwo className="mb-10">{t("banner_title")}</HeaderTwo>
+            <p className="mb-16 font-medium text-text-dark">{t("banner_slogan")}</p>
+            <OpenModalButton
+              buttonText={t("book_btn")}
+              modalType="form"
+              modalProps={{
+                formId: "book-ride",
+                title: t("transport_booking"),
+                closeButton: t("close_btn"),
+              }}
+            />
           </div>
           <figure className="absolute -right-30 top-[-60px] hidden lg:block w-[60%] h-[115%]">
             <Image
@@ -51,7 +57,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Right Column - Contact & Newsletter */}
           <div className="flex flex-col gap-8">
             {/* Contact Info */}
             <div className="flex flex-col gap-4">

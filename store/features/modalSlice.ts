@@ -1,17 +1,17 @@
-// store/features/modalSlice.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { ReactNode } from "react";
 
-export type ModalType = "form" | "message" | "confirmation"; 
+export type ModalType = "form" | "message" | "confirmation";
 
 interface ModalPayload {
   modalType: ModalType;
-  modalProps?: Record<string, unknown>; 
+  modalProps?: Record<string, ReactNode>;
 }
 
 interface ModalState {
   open: boolean;
   modalType: ModalType | null;
-  modalProps?: Record<string, unknown>;
+  modalProps?: Record<string, ReactNode>;
 }
 
 const initialState: ModalState = {
