@@ -1,0 +1,1 @@
+export { default as BookingFormConfirmationEmail } from "./BookingFormConfirmationEmail";
