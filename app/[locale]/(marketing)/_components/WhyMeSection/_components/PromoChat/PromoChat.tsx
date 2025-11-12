@@ -50,7 +50,7 @@ function PromoChat() {
           >
             {msg.sender === "driver" && (
               <Image
-                src="/images/przemek-avatar.jpg"
+                src="/images/tomek-avatar.png"
                 alt="Driver"
                 width={45}
                 height={45}
@@ -91,7 +91,7 @@ function PromoChat() {
             className="flex items-center gap-2 py-6"
           >
             <Image
-              src="/images/przemek-avatar.jpg"
+              src="/images/tomek-avatar.png"
               alt="Driver"
               width={45}
               height={45}

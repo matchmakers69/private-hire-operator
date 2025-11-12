@@ -2,7 +2,6 @@ import { Logo } from "@/shared/ui/Logo";
 import { SocialLink } from "@/shared/components/SocialLink";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { HeaderTwo } from "../HeaderTwo";
 import { NavLink } from "../NavLink";
 import { OpenModalButton } from "@/shared/components/OpenModalButton";
 
@@ -14,7 +13,7 @@ function Footer() {
       <div className="wrapper base-container">
         <div className="banner-cta rounded-4xl mb-[70px] xl:mb-[70px] overflow-hidden relative mt-[-190px] pt-[30px] pb-[30px] lg:pt-[50px] lg:pb-[50px] pl-[30px] pr-[30px] lg:pl-30 bg-grey-light">
           <div className="cta-content w-full max-w-full lg:max-w-[50%]">
-            <HeaderTwo className="mb-10">{t("banner_title")}</HeaderTwo>
+            <h3 className="mb-10 leading-tight text-text-dark">{t("banner_title")}</h3>
             <p className="mb-16 font-medium text-text-dark">{t("banner_slogan")}</p>
             <OpenModalButton
               buttonText={t("book_btn")}
@@ -26,7 +25,7 @@ function Footer() {
               }}
             />
           </div>
-          <figure className="absolute -right-30 top-[-60px] hidden lg:block w-[60%] h-[115%]">
+          <figure className="absolute -right-30 top-[-60px] hidden lg:block w-[50%] xl:w-[60%] h-[115%]">
             <Image
               src="/web-icons/cube-city.svg"
               alt="Private hire transport illustration"

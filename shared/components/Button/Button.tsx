@@ -10,9 +10,11 @@ const button = cva(
           "bg-[var(--color-btn-primary)] text-[var(--color-text-dark)] hover:bg-[var(--color-btn-primary-hover)] focus:ring-[var(--color-btn-primary-hover)]",
         secondary:
           "bg-[var(--color-btn-secondary)] text-white hover:bg-[var(--color-btn-secondary-hover)] focus:ring-[var(--color-btn-secondary-hover)]",
+        ghost:
+          "bg-transparent text-[var(--color-text-dark)] border border-gray-300 hover:bg-[var(--color-grey-light)] focus:ring-[var(--color-text-dark)]",
       },
       size: {
-        sm: "h-8 px-3 text-sm",
+        sm: "h-12 px-3 text-sm",
         md: "h-16 px-12 text-base",
         lg: "h-20 px-18 text-md",
       },

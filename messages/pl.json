@@ -14,13 +14,14 @@
   },
   "about": {
     "title": "O mnie",
-    "description": "Cześć! Mam na imię Tomasz i jestem kierowcą taksówki od 2017 roku. Świadczyłem usługi przewozowe dla osób niepełnosprawnych oraz dowoziłem dzieci do szkoły. Posiadam wszystkie niezbędne licencje i ubezpieczenie związane z transportem. Jeśli potrzebujesz dojechać na lotnisko, do szpitala lub w inne wybrane miejsce, dołożę wszelkich starań, aby sprostać Twoim wymaganiom i bezpiecznie dowieźć Cię do celu."
+    "description": "Cześć! Mam na imię Tomasz i jestem kierowcą taksówki od 2017 roku. Świadczyłem usługi przewozowe dla osób niepełnosprawnych oraz dowoziłem dzieci do szkoły. Posiadam wszystkie niezbędne licencje i ubezpieczenie związane z transportem. Jeśli potrzebujesz dojechać na lotnisko, do szpitala lub w inne wybrane miejsce, dołożę wszelkich starań, aby sprostać Twoim wymaganiom i bezpiecznie dowieźć Cię do celu.",
+    "view_more_btn": "Zobacz więcej"
   },
   "services": {
-	"section_title": "Profesjonalne usługi transportowe",
-	"section_subtitle": "Moja oferta",
-	"view_more_btn": "Zobacz więcej",
-	
+    "section_title": "Profesjonalne usługi transportowe",
+    "section_subtitle": "Moja oferta",
+    "view_more_btn": "Zobacz więcej",
+
     "airport_transfers": "Transport na lotnisko",
     "embassy_visits": "Wizyty w ambasadach",
     "hospital_transfers": "Przewozy do szpitala",
@@ -44,5 +45,21 @@
     "close_btn": "Zamknij",
     "banner_title": "Gotowi, aby rozpocząć? Skontaktuj się ze mną już dziś!",
     "banner_slogan": "Oferuję bezpieczny, niezawodny i komfortowy transport prywatny na lotniska, do ambasad, szpitali i nie tylko."
+  },
+  "assistant": {
+    "title": "Zapytaj o podróże lub usługi w Bostonie",
+    "subtitle": "💬 Możesz zapytać naszego wirtualnego asystenta o lokalne trasy, lotniska lub usługi kurierskie.",
+    "examples_title": "Przykładowe pytania:",
+    "ask_button": "Zapytaj mnie o podroż",
+    "ask_placeholder": "Zadaj swoje pytanie...",
+    "thinking": "Myślę...",
+    "clear_button": "Wyczyść czat",
+    "examples": [
+      "Czy oferujesz transfery na lotnisko?",
+      "Jak daleko jest z Bostonu do Heathrow?",
+      "Czy mogę zamówić usługę kurierską?",
+      "O której najlepiej wyjechać na wczesny lot?",
+      "Czy jesteś dostępny w weekendy?"
+    ]
   }
 }

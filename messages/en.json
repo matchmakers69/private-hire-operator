@@ -31,7 +31,8 @@
   },
   "about": {
     "title": "About me",
-    "description": "Hi! My name is Tomasz, and I’ve been working as a taxi driver since 2017.\nI’ve provided transport services for people with disabilities and driven children to school.\nI hold all the necessary licenses and insurance required for passenger transport.\nIf you need a ride to the airport, hospital, or any other destination, I’ll do my best to meet your needs and make sure everyone who chooses my service arrives safely at their destination."
+    "description": "Hi! My name is Tomasz, and I’ve been working as a taxi driver since 2017.\nI’ve provided transport services for people with disabilities and driven children to school.\nI hold all the necessary licenses and insurance required for passenger transport.\nIf you need a ride to the airport, hospital, or any other destination, I’ll do my best to meet your needs and make sure everyone who chooses my service arrives safely at their destination.",
+    "view_more_btn": "View more"
   },
   "footer": {
     "home_link": "Home",
@@ -44,5 +45,21 @@
     "close_btn": "Close",
     "banner_title": "Ready to get started? Talk to me today!",
     "banner_slogan": "I offer reliable private hire transport for airport transfers, embassy visits, and courier services across Boston and beyond."
+  },
+  "assistant": {
+    "title": "Ask about travel or services in Boston",
+    "subtitle": "💬 You can ask our virtual assistant about local routes, airports, or courier services.",
+    "examples_title": "Example questions:",
+    "ask_placeholder": "Ask your question...",
+    "ask_button": "Ask me something related to travel",
+    "thinking": "Thinking...",
+    "clear_button": "Clear chat",
+    "examples": [
+      "Do you offer airport transfers?",
+      "How far is it from Boston to Heathrow?",
+      "Can I book a courier service?",
+      "What’s the best time to leave for an early flight?",
+      "Are you available on weekends?"
+    ]
   }
 }
