@@ -1,11 +1,14 @@
 import { fetchServices } from "@/libs/servicesApi";
-import { ServiceListing } from "./components/ServiceListing";
 import { HeaderTwo } from "@/shared/ui/HeaderTwo";
 import { AnchorButton } from "@/shared/components/AnchorButton";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { ServiceListing } from "./components/ServiceListing";
 
-function ServicesSection() {
-  const t = useTranslations("services");
+async function ServicesSection() {
+  const t = await getTranslations("services");
+
+  const services = await fetchServices();
+
   return (
     <section id="services" className="bg-background-alt pt-24">
       <div className="wrapper">
@@ -17,7 +20,7 @@ function ServicesSection() {
             {t("section_title")}
           </HeaderTwo>
         </header>
-        <ServiceListing getServices={fetchServices} />
+        <ServiceListing services={services} />
         <div className="flex flex-col justify-center items-center py-24">
           <AnchorButton href="#why-me" className="w-full lg:w-auto" intent="secondary" size="lg">
             {t("view_more_btn")}
