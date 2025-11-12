@@ -1,9 +1,10 @@
 import { Service } from "@/app/[locale]/(marketing)/_components/ServicesSection/types/services";
-import { API_URL } from "@/constants/urls";
+import { getBaseUrl } from "./api";
 
 export async function fetchServices(): Promise<Service[]> {
-  const res = await fetch(`${API_URL || ""}/data/services.json`, {
-    cache: "force-cache", // lub "no-store" jeśli zawsze chcesz świeże dane
+  const baseUrl = getBaseUrl();
+  const res = await fetch(`${baseUrl}/data/services.json`, {
+    cache: "force-cache",
   });
 
   if (!res.ok) {
