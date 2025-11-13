@@ -5,6 +5,8 @@ import { useAppSelector, useAppDispatch } from "@/store/hooks";
 import { closeModal } from "@/store/features/modalSlice";
 import BookingForm from "@/app/[locale]/(marketing)/_components/BookingForm";
 import { BaseProps } from "@/shared/types";
+import { X } from "lucide-react";
+import { IconButton } from "@mui/material";
 import { SystemStyleObject } from "@mui/system";
 import { Button } from "../Button";
 
@@ -25,10 +27,10 @@ function GlobalDialog({ additionalPaperSx }: GlobalDialogProps) {
     width: "100%",
     maxWidth: "var(--container-max-width-md)",
     margin: "1.5rem auto",
-    padding: "30px 15px 30px 15px",
-    minWidth: "50rem",
+    padding: "30px 0 20px 0",
+    minWidth: "30rem",
     borderRadius: "2rem",
-    "@media (min-width: 768px)": { minWidth: "52rem" },
+    "@media (min-width: 768px)": { minWidth: "52rem", padding: "30px 10px 20px 10px" },
     "@media (min-width: 960px)": { minWidth: "62rem" },
   };
 
@@ -52,23 +54,33 @@ function GlobalDialog({ additionalPaperSx }: GlobalDialogProps) {
       {modalProps?.title && typeof modalProps.title === "string" && (
         <Box
           sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
             padding: "0 24px",
             paddingBottom: 0,
           }}
         >
-          <h3
-            id="global-dialog-title"
-            className={`text-[2rem] font-semibold text-text-light sm:text-[2.4rem]`}
-          >
+          <h3 id="global-dialog-title" className="text-[2rem] font-semibold text-text-light sm:text-[2.4rem]">
             {modalProps.title}
           </h3>
+          <IconButton
+            onClick={() => dispatch(closeModal())}
+            size="small"
+            aria-label="close modal"
+            sx={{ color: "text.secondary" }}
+          >
+            <X size={20} />
+          </IconButton>
         </Box>
       )}
       <DialogContent>{content}</DialogContent>
       <DialogActions>
-        <Button onClick={() => dispatch(closeModal())} size="md" intent="secondary">
-          {modalProps?.closeButton || "Close"}
-        </Button>
+        <div className="w-full flex justify-end py-6">
+          <Button onClick={() => dispatch(closeModal())} size="md" intent="secondary">
+            {modalProps?.closeButton || "Close"}
+          </Button>
+        </div>
       </DialogActions>
     </Dialog>
   );
