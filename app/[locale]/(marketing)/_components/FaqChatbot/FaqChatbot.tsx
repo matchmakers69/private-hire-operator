@@ -15,7 +15,6 @@ export default function FaqChatbot() {
   const previousMessageCount = useRef(0);
   const isFirstRender = useRef(true);
 
-  // Auto-scroll only when NEW messages are added (not on initial mount)
   useEffect(() => {
     // Skip scroll on first render
     if (isFirstRender.current) {
@@ -85,7 +84,7 @@ export default function FaqChatbot() {
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6 justify-center w-full">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-12 justify-center w-full">
           <label htmlFor="question" className="sr-only">
             {t("ask_placeholder")}
           </label>
@@ -96,12 +95,12 @@ export default function FaqChatbot() {
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
             placeholder={t("ask_placeholder")}
-            className="border border-gray-300 rounded-2xl px-4 py-4 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 rounded-2xl px-4 py-6 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             aria-label={t("ask_placeholder")}
             autoComplete="off"
             disabled={loading}
           />
-          <div className="flex justify-center gap-3">
+          <div className="flex flex-col lg:flex-row justify-center align-center gap-8 w-full">
             <Button type="submit" intent="secondary" size="lg" disabled={loading || !question.trim()}>
               {loading ? t("thinking") : t("ask_button")}
             </Button>
