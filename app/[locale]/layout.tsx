@@ -24,8 +24,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Boston Private Hire Transport" }],
   openGraph: {
     title: "Boston Private Hire Transport",
-    description:
-      "Private hire transport in Boston, UK. Comfortable airport transfers and reliable courier services.",
+    description: "Private hire transport in Boston, UK. Comfortable airport transfers.",
     type: "website",
     locale: "en_GB",
     siteName: "Boston Private Hire Transport",

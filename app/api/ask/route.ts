@@ -137,7 +137,6 @@ export async function POST(req: Request) {
     Services offered:
     - Airport transfers (UK airports and European airports)
     - Long-distance travel within UK and European Union
-    - Courier services (UK and EU)
     - School runs and hospital appointments (local)
     - Disability transport with wheelchair accessibility
     - Professional, licensed, and insured service since 2017

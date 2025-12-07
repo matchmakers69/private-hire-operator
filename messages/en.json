@@ -2,7 +2,7 @@
   "home": {
     "title": "Your trusted way to travel in comfort",
     "slogan": "Your partner for reliable transport",
-    "subtitle": "I offer reliable private hire transport for airport transfers, embassy visits, and courier services across Boston and beyond.",
+    "subtitle": "I offer reliable private hire transport for airport transfers, embassy visits across Boston and beyond.",
     "view_more_btn": "View more",
     "book_btn": "Book now",
     "transport_booking": "Private Hire Booking Form",
@@ -21,13 +21,11 @@
     "embassy_visits": "Embassy Visits",
     "hospital_transfers": "Hospital Transfers",
     "eu_travel": "EU Travel",
-    "courier_services": "Courier Services",
 
     "airport_transfers_description": "Reliable and comfortable airport transportation services",
     "embassy_visits_description": "Professional transport to embassy appointments",
     "hospital_transfers_description": "Safe and punctual medical appointment transport",
-    "eu_travel_description": "Long-distance passenger transport across Europe",
-    "courier_services_description": "Fast and secure document and package delivery"
+    "eu_travel_description": "Long-distance passenger transport across Europe"
   },
   "about": {
     "title": "About me",
@@ -38,17 +36,17 @@
     "home_link": "Home",
     "about_link": "About me",
     "copyright": "Private Hire Operator. All rights reserved.",
-    "footer_text_content": "Professional private hire transport based in Boston, UK. Reliable passenger transfers and courier services since 2017.",
+    "footer_text_content": "Professional private hire transport based in Boston, UK. Reliable passenger transfers since 2017.",
     "view_more_btn": "View more",
     "book_btn": "Book now",
     "transport_booking": "Private Hire Booking Form",
     "close_btn": "Close",
     "banner_title": "Ready to get started? Talk to me today!",
-    "banner_slogan": "I offer reliable private hire transport for airport transfers, embassy visits, and courier services across Boston and beyond."
+    "banner_slogan": "I offer reliable private hire transport for airport transfers, embassy visits across Boston and beyond."
   },
   "assistant": {
     "title": "Ask about travel or services in Boston",
-    "subtitle": "💬 You can ask our virtual assistant about local routes, airports, or courier services.",
+    "subtitle": "💬 You can ask our virtual assistant about local routes, airports.",
     "examples_title": "Example questions:",
     "ask_placeholder": "Ask your question...",
     "ask_button": "Ask me something",

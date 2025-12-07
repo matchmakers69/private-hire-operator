@@ -18,10 +18,5 @@
     "id": 4,
     "image": "/images/driver.jpg",
     "key": "eu_travel"
-  },
-  {
-    "id": 5,
-    "image": "/images/courier-service.jpg",
-    "key": "courier_services"
   }
 ]
